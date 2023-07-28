@@ -1,0 +1,190 @@
+1. Method overloading :It refers to same classes but different parameters.
+
+
+
+
+
+
+
+3.stack memory: It is a kind of memory ,where the value declare to data types and variables 
+
+
+heap memory:It is a kind of memory,where 
+
+
+4. constructor overloading
+
+class Car{
+String name;
+doble cost;
+{System.out.println("running in void main")
+}
+}
+
+
+class carKiller{
+public static void main(String() args)
+car name="Supra";
+car cost=987789;
+}
+
+
+6.    class Cake {
+    static String material;
+    static String color;
+    int quantity;
+    String size;
+
+    Cake(String material, String color) {
+        System.out.println("Invoking static argument constructor in Cake");
+        Cake.material = material;
+        Cake.color = color;
+    }
+
+    Cake(int quantity, String size) {
+        System.out.println("Invoking instance argument constructor in Cake");
+        this.quantity = quantity;
+        this.size = size;
+    }
+
+    static {
+        material = "bread";
+        color = "white";
+        System.out.println("Invoking static block in Brick");
+    }
+
+    static void printStatic() {
+        System.out.println("Invoking static void method in Cake");
+        System.out.println("Material: " + material);
+        System.out.println("Color: " + color);
+    }
+
+    void printInstance() {
+        System.out.println("Invoking instance void method in Cake");
+        System.out.println("Quantity: " + quantity);
+        System.out.println("Size: " + size);
+    }
+}
+
+
+
+
+
+       class CakeKiller{    
+       public static void main(String[] args) {
+        Brick.printStatic(); 
+
+        Cake cake1 = new Cake("Bread", "white");
+        cake1.printInstance(); 
+
+        Cake cake2 = new Cake(9, "Large");
+        Cake2.printInstance(); 
+    }
+	}
+
+
+
+7.
+class Job{
+    String name;
+    int noOfPage;
+    int fontSize;
+  Job(String name)
+{
+  System.out.println("Name:"+this.name);
+this.name=name;
+}
+Job(String name,int noOfPage)
+{
+  System.out.println("Name:"+this.name);
+ System.out.println("noOfPage"+noOfPage);
+
+this(name);
+this.noOfPage=noOfPage;
+}
+Job(String name,int noOfPage,int fontSize)
+{
+  this(name,noOfPage)
+this.name=name;
+
+}
+}
+
+//Main method
+Class JobKiller{
+public static void main(String[] args){
+System.out.println("Invoking main in JobKiller");
+Job job=new Job("Harshi");
+System.out.println(job.name);
+Job job1=new Job("Harshi",2);
+System.out.println(job1.name);
+System.out.println(job1.noOfPage);
+Job job2=new Job("Harshi",2,12);
+System.out.println(job2.name);
+System.out.println(job2.noOfPage);
+System.out.println(job2.fontSize);
+}
+  }
+
+
+5.
+
+class Cake{
+
+static void tasty(int noOfPieces)
+{
+System.out.println("No of Pieces:"+noOfPieces);
+}
+static void tasty(int noOfPieces,String name)
+{
+System.out.println("No of Pieces:"+noOfPieces);
+System.out.println("Name:"+name);
+}
+}
+
+
+//Main method
+class CakeKiller{
+public static void main(String[] values)
+{
+System.out.println("Invoking main in CakeKiller");
+Cake.tasty(7);
+Cake.tasty(5,"BlackForestry");
+}
+}
+
+
+
+2)There are four types of variables;
+a)Local variable: It is declared inside the method
+ex:class King{
+public static void main(String[] args)
+{
+int value;
+}
+}
+//Here the int value is an local variable.
+b)Static variable: Variable declared outside the method and inside the class by using static keyword. Static variable will creat only single copy of an object.
+      class Name{
+      static int value;
+}
+c)Instance variable:variable is declared outside the method and inside the class;
+class Think{
+int value;
+} 
+d)Parameter:It is also known as local variable and anything which is written within paranthesis is called as parameter;
+class Name{
+static void teach(int value) 
+}
+//here int value is parameter.
+	
+
+
+
+
+
+
+
+
+
+
